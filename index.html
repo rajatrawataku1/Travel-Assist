@@ -1,0 +1,467 @@
+<html>
+
+<title>
+</title>
+
+<head>
+
+	<link rel="stylesheet" type="text/css" href="animate.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="leaflet.css">
+
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="materialize.min.js"></script>
+	<script type="text/javascript" src="leaflet.js"></script>
+	<script type="text/javascript" src="front_end.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+
+	<script type="text/javascript" src="front.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Tamma" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Mitr" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Mitr" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Paaji" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Da" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+
+
+</head>
+
+<body onload="not_to_load()" bgcolor=#3bd6c6>
+
+<div id="starting_wtiten" class="animated bounceInRight">
+Ultimate Travelling Solutions
+</div>
+
+ <div id="back_image">
+<img src="city1.gif" id="back_gif">
+</div>
+ 
+ <script type="text/javascript">
+	
+	setTimeout(function()
+		{
+
+			document.getElementById("back_gif").style.display="none";
+			document.getElementById("starting_wtiten").style.display="none";
+			document.getElementById("back_gif").className="animated fadeOut";
+			document.getElementById("starting_wtiten").className="animated fadeOut";
+			document.getElementById("first_bar").className="animated fadeIn z-depth-1";
+			document.getElementById("sec_bar").className="animated fadeIn z-depth-1";
+			document.getElementById("slideshow").className="animated fadeIn";
+ 			document.getElementById("get_started").className="animated fadeIn z-depth-2";
+            			
+		},1);
+</script>
+
+
+	<div id="first_bar" >
+
+
+	<img src="logoimage.jpg" id="logoimage">
+
+		<label id="logo">Travel Assist</label>
+
+		<label id="loginame" class="login_class"> Login/SignUp</label>
+		<img src="ham.jpg" id="loginham" class="login_class">
+
+	</div>
+
+
+	<div id="sec_bar" >
+
+	<div id="home" class="colour_change">
+	<br>Home
+	</div>
+
+	<div id="Aboutus" class="colour_change">
+	<br>About Us
+	</div>
+
+	<div id="Howitworks" class="colour_change" >
+	<br>How It Works
+	</div>
+
+	<div id="UseOurAPI" class="colour_change">
+	<br>API	
+	</div>
+
+	<div id="Benefits" class="colour_change">
+	<br>Benefits
+	</div>
+
+	<div id="Jobs" class="colour_change">
+	<br>Jobs
+	</div>
+
+	<div id="PrivacyPolicy" class="colour_change">
+	<br>Privacy Policy
+	</div>
+
+	<div id="ContactUs" class="colour_change">
+	<br>Contact Us
+	</div>
+
+
+
+	
+	</div>
+
+	<div id="slideshow" >
+
+	<img src="slideshow7.jpg" id="slideshow_image">
+
+	<div id="border_div">
+
+	<div id="the_travel">
+	The travel app that keeps up with You 
+	</div>	
+
+	<label id="travel_text">Reach Your Destination On Time</label> 
+
+	<div id="get_started" onclick="remove_slide()" class="animated fadeIn z-depth-2" >
+    	Get Started
+ 	</div>
+
+ 	</div>
+
+	</div>
+
+	
+
+	<div id="src_des">
+		<div id="src_des_layer">
+
+		<div id="get_me_somewhere">
+			Get Me Somewhere
+		</div>
+
+			<div id="st_pt_box" >
+
+ 
+				 <input type="text" name="" placeholder=" Source" id="st_input_box" list="start">
+				<datalist id="start" style="font-size : 1px">
+      				<option value="Cunnigham Heights,Kansas City,USA" />
+					<option value="Argentina,Kansas City,USA" />
+					<option value="Westside North,Kansas City,USA" />
+					<option value="Kensinton,Kansas City,USA" />
+					<option value="Coronado,Kansas City,USA" />
+					<option value="Riverview,Kansas City,USA" />
+					<option value="Forest Avenue,Kansas City,USA" />
+					<option value="North 4th Street,Kansas City,USA" />
+					<option value="U.S.24,Kansas City,USA" />
+	 				<option value="Troost Avenue & Interstate,Kansas City,USA" />
+					<option value="Briar Cliff,Kansas City,USA" />
+					<option value="Riverside,MO,Kansas City,USA" />
+					<option value="Bree Hills,Kansas City,USA" />
+					<option value="LakeView Terrace,Kansas City,USA" />
+					<option value="Antioch Acres,Kansas City,USA" />
+				</datalist>
+ 
+			</div>
+
+			<div id="end_pt_box">
+				<input type="text" name="" placeholder=" Destination" id="end_input_box" list="stop">
+				<datalist id="stop">
+
+					<option value="Cunnigham Heights,Kansas City,USA" />
+					<option value="Argentina,Kansas City,USA" />
+					<option value="Westside North,Kansas City,USA" />
+					<option value="Kensinton,Kansas City,USA" />
+					<option value="Coronado,Kansas City,USA" />
+					<option value="Riverview,Kansas City,USA" />
+					<option value="Forest Avenue,Kansas City,USA" />
+					<option value="North 4th Street,Kansas City,USA" />
+					<option value="U.S.24,Kansas City,USA" />
+	 				<option value="Troost Avenue & Interstate,Kansas City,USA" />
+					<option value="Briar Cliff,Kansas City,USA" />
+					<option value="Riverside,MO,Kansas City,USA" />
+					<option value="Bree Hills,Kansas City,USA" />
+					<option value="LakeView Terrace,Kansas City,USA" />
+					<option value="Antioch Acres,Kansas City,USA" />
+
+				</datalist>
+
+				</div>
+
+			<div id="time_box">
+				<input type="text" name="" placeholder=" Time" id="time_input_box" list="inp_time_list">
+				<datalist id="inp_time_list">
+					<option value="0"/>
+					<option value="1"/>
+					<option value="2"/>
+					<option value="3"/>
+					<option value="4"/>
+					<option value="5"/>
+					<option value="6"/>
+					<option value="7"/>
+					<option value="8"/>
+					<option value="9"/>
+					<option value="10"/>
+					<option value="11"/>
+					<option value="12"/>
+					<option value="13"/>
+					<option value="14"/>
+					<option value="15"/>
+					<option value="16"/>
+					<option value="17"/>
+					<option value="18"/>
+					<option value="19"/>
+					<option value="20"/>
+					<option value="21"/>
+					<option value="22"/>
+					<option value="23"/>
+
+				</datalist>
+			</div>
+
+			<div id="date_box">
+				<input type="text" name="" placeholder=" Day" id="date_input_box" list="inp_date_list">
+				<datalist id="inp_date_list">
+					<option value="Monday"/>
+					<option value="Tuesday"/>
+					<option value="Wednesday"/>
+					<option value="Thursday"/>
+					<option value="Friday"/>
+					<option value="Saturday"/>
+					<option value="Sunday"/>
+				</datalist>
+
+			</div>
+
+			<div id="trans_box">
+				<input type="text" name="" placeholder=" Transport" id="trans_input_box" list="inp_trans_list">
+				<datalist id="inp_trans_list">
+					<option value="Car"/>
+					<option value="Bike"/>
+					<option value="Walk"/>
+				</datalist>
+			</div>
+
+			<div id="search_button" onclick="field_empty()">
+
+			<label id="search_text">Search</label>
+			
+			<div id="arrow_image">
+
+			<img src="arrow.jpg" id="arrow_image_jpg">
+
+			</div>
+			
+			</div>
+
+		</div>
+
+		<div id="suggsn">
+
+			<div id="overview">
+
+			<div id="dotted_line">
+
+			<div id="first_dot">
+			</div>
+
+			<div id="second_dot">
+			</div>
+
+			<div id="third_dot">
+			</div>
+
+			<div id="fourth_dot">
+			</div>
+
+			<div id="fifth_dot">
+			</div>
+
+
+
+			</div>
+				<div id="from_t">
+				Rajat Rawat
+				</div>
+				
+				<div id="from_o">
+				<img src="placeholder.png" id="location_jpg">
+				</div>
+
+				<div id="dest_t">
+				Rohan Chougule
+				</div>
+				
+				<div id="dest_o">
+				<img src="placeholder.png" id="location_jpg">
+				</div>
+
+			</div>
+
+			<div id="suggested">
+			Suggested
+			</div>
+
+			<div id="first_route" class="suggsn_routes" onclick="route_array(0)">
+
+			<div id="tag_for_1st_route">
+			Minimun Cost Route
+			</div>
+				<div class="cost_pic fa fa-clock-o fa-3x">
+				</div>
+				<div id="rt_1_c" class="cost" >
+				</div>
+
+				<div class="time_pic fa fa-inr fa-3x">
+				</div>
+				<div id="rt_1_t" class="time" >
+				</div>
+
+				<div class="dist_pic fa fa-road fa-3x">
+				</div>
+				<div id="rt_1_d" class="dist" >
+				</div>
+			</div>
+
+			<div id="second_route" class="suggsn_routes" onclick="route_array(1)">
+
+				<div id="tag_for_2nd_route">
+				Least Time Taking Route
+				</div>
+				<div class="cost_pic fa fa-clock-o fa-3x">
+				</div>
+				<div id="rt_2_c" class="cost" >
+				</div>
+
+				<div class="time_pic fa fa-inr fa-3x">
+				</div>
+				<div id="rt_2_t" class="time" >
+				</div>
+
+				<div class="dist_pic fa fa-road fa-3x">
+				</div>
+				<div id="rt_2_d" class="dist" >
+				</div>
+			</div>
+
+			<div id="third_route" class="suggsn_routes" onclick="route_array(2)">
+
+				<div id="tag_for_3rd_route">
+				Shortest Distance Route
+				</div>
+
+				<div class="cost_pic fa fa-clock-o fa-3x">
+				</div>
+				<div id="rt_3_c" class="cost">
+				</div>
+
+				<div class="time_pic fa fa-inr fa-3x">
+				</div>
+				<div id="rt_3_t" class="time">
+				</div>
+
+				<div class="dist_pic fa fa-road fa-3x">
+				</div>
+				<div id="rt_3_d" class="dist">
+				</div>
+			</div>
+
+			<div id="fourth_route" class="suggsn_routes" onclick="route_array(3)">
+					<div id="tag_for_optimized_route">
+					3 best Optimized Route
+					</div>
+
+				<div class="cost_pic fa fa-clock-o fa-3x">
+				</div>
+				<div id="rt_4_c" class="cost">
+				</div>
+
+				<div class="time_pic fa fa-inr fa-3x">
+				</div>
+				<div id="rt_4_t" class="time">
+				</div>
+
+				<div class="dist_pic fa fa-road fa-3x">
+				</div>
+				<div id="rt_4_d" class="dist">
+				</div>
+			</div>
+
+			<div id="fifth_route" class="suggsn_routes" onclick="route_array(4)">
+				<div class="cost_pic fa fa-clock-o fa-3x">
+				</div>
+				<div id="rt_5_c" class="cost">
+				</div>
+
+				<div class="time_pic fa fa-inr fa-3x">
+				</div>
+				<div id="rt_5_t" class="time">
+				</div>
+
+				<div class="dist_pic fa fa-road fa-3x">
+				</div>
+				<div id="rt_5_d" class="dist">
+				</div>
+			</div>
+
+			<div id="sixth_route" class="suggsn_routes" onclick="route_array(5)">
+				<div class="cost_pic fa fa-clock-o fa-3x">
+				</div>
+				<div id="rt_6_c" class="cost">
+				</div>
+
+				<div class="time_pic fa fa-inr fa-3x">
+				</div>
+				<div id="rt_6_t" class="time ">
+				</div>
+
+				<div class="dist_pic fa fa-road fa-3x">
+				</div>
+				<div id="rt_6_d" class="dist">
+				</div>
+			</div>
+
+			<div id="back_button" onclick="load_search();remove_layer()">
+			<img src="left-arrow.png" id="back_image_b" height="70%" width="70%">
+			</div>
+		</div>
+
+	</div>
+
+	<div id="mapid">
+		<script type="text/javascript">
+			loadmap();
+		</script>
+	</div>
+
+	<div id="left_bar">
+		<div id="left_button" onclick="load_left_bar()">
+		
+		</div>
+
+		<div id="home_button" class="left_bar_button">
+		</div>
+
+		<div id="share_button" class="left_bar_button">
+		</div>
+
+		<div id="help_button" class="left_bar_button">
+		</div>
+
+		<div id="feed_button" class="left_bar_button">
+		</div>
+
+		<div id="about_button" class="left_bar_button">
+		</div>
+
+		<div id="privacy_button" class="left_bar_button">
+		</div>
+
+	</div>
+
+	
+
+</body>
